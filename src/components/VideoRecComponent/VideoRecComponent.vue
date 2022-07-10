@@ -31,7 +31,9 @@ export default {
           this.counter--;
         }, 1000);
         this.recorder = new MediaRecorder(stream);
-      } catch (error) {}
+      } catch (error) {
+        console.log("Error",error);
+      }
     })();
   },
   methods: {

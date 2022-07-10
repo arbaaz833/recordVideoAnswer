@@ -12,7 +12,7 @@ export default {
 
 <template>
   <div class="ques_con">
-    <div class="abc">
+    <div class="inner_con">
       <div class="ques_num">Question number 1</div>
     <div class="ques">Why are you the right person for the job?</div>
     </div>
@@ -32,7 +32,7 @@ export default {
   flex-direction: column;
 }
 
-.abc {
+.inner_con {
   flex:1;
   display: flex;
   flex-direction: column;
