@@ -93,7 +93,7 @@ export default {
         </div>
       </div>
 
-      <Question :showVideo="showVideo" :video="video" :stopRec="stopRec" :playPauseVideo="playPauseVideo" />
+      <Question :showVideo="showVideo" :video="video" :stopRec="stopRec" :playPauseVideo="playPauseVideo" :isVideoPlaying="isVideoPlaying" />
 
     </div>
   </div>

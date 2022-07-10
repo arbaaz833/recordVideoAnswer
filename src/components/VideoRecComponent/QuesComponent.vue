@@ -5,6 +5,7 @@ export default {
     playPauseVideo: Function,
     video: String,
     showVideo: Boolean,
+    isVideoPlaying: Boolean,
   },
 };
 </script>
@@ -17,7 +18,7 @@ export default {
     </div>
     <div class="btn_con">
       <button :disabled="this.video || !this.showVideo" @click="this.stopRec">Start / Stop recording</button>
-      <button :disabled="!this.video" @click="this.playPauseVideo">Play / Pause Recording</button>
+      <button :disabled="!this.video" @click="this.playPauseVideo">{{this.isVideoPlaying?"Pause":"Play"}} Recording</button>
     </div>
   </div>
 </template>
